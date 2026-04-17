@@ -57,26 +57,4 @@ Open `http://localhost:3000`.
 
 `/data/events.ts` contains realistic multi-state India cycling event data and utilities for filtering, searching, sorting, and status calculations.
 
-
-## GitHub Pages Deployment
-
-This project is configured for GitHub Pages via `.github/workflows/deploy-pages.yml`.
-
-1. Push to the `main` branch.
-2. In GitHub repo settings, set **Pages → Source** to **GitHub Actions**.
-3. The workflow builds a static export (`out/`) and deploys automatically.
-
-For project repositories (for example `username/cycleindia`), base paths are configured automatically in CI.
-
-## Contributing
-
-Contributions are welcome.
-
-1. Fork the repository.
-2. Create a feature branch.
-3. Run lint and type checks.
-4. Submit a pull request with clear scope and screenshots for visual changes.
-
-## License
-
-MIT (recommended for open-source projects; add `LICENSE` file if needed).
+<<
