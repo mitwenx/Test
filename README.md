@@ -57,15 +57,4 @@ Open `http://localhost:3000`.
 
 `/data/events.ts` contains realistic multi-state India cycling event data and utilities for filtering, searching, sorting, and status calculations.
 
-## Contributing
-
-Contributions are welcome.
-
-1. Fork the repository.
-2. Create a feature branch.
-3. Run lint and type checks.
-4. Submit a pull request with clear scope and screenshots for visual changes.
-
-## License
-
-MIT (recommended for open-source projects; add `LICENSE` file if needed).
+<<
