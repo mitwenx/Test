@@ -1,12 +1,11 @@
-// next.config.ts
-
-import type { NextConfig } from "next";
+// next.config.mjs
 
 const isGithubActions = process.env.GITHUB_ACTIONS === "true";
 const repoName = process.env.GITHUB_REPOSITORY?.split("/")[1] ?? "";
 const isUserOrOrgSite = repoName.endsWith(".github.io");
 
-const nextConfig: NextConfig = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   output: "export",
   trailingSlash: true,
   images: {
@@ -18,7 +17,6 @@ const nextConfig: NextConfig = {
       }
     ]
   },
-  // Automatically configure paths for GitHub Pages subdirectories
   basePath: isGithubActions && !isUserOrOrgSite ? `/${repoName}` : "",
   assetPrefix: isGithubActions && !isUserOrOrgSite ? `/${repoName}/` : undefined
 };
